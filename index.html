@@ -9,13 +9,67 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
-        .section-title { border-bottom: 2px solid #0d6efd; padding-bottom: 5px; margin-bottom: 20px; color: #2c3e50; }
-        .resume-section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        header { background-color: #2c3e50; color: white; padding: 30px 0; }
-        header a { color: #82c0cc; text-decoration: none; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+            background-color: #f1f5f9; 
+            color: #334155; 
+            line-height: 1.7;
+        }
+        
+        header { 
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); 
+            color: white; 
+            padding: 40px 0 35px 0; 
+        }
+        header a { color: #38bdf8; text-decoration: none; transition: color 0.2s; }
         header a:hover { color: #ffffff; text-decoration: underline; }
-        .profile-img { width: 120px; height: 120px; object-fit: cover; border: 4px solid #82c0cc; }
+        
+        .profile-img { 
+            width: 130px; 
+            height: 130px; 
+            object-fit: cover; 
+            border: 3px solid #38bdf8; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .resume-section { 
+            background: white; 
+            padding: 35px; 
+            border-radius: 12px; 
+            margin-bottom: 30px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+            border: 1px solid #e2e8f0;
+        }
+        
+        .section-title { 
+            border-bottom: 2px solid #38bdf8; 
+            padding-bottom: 8px; 
+            margin-bottom: 24px; 
+            color: #0f172a; 
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+
+        /* Refined Academic Postdoc Highlight Banner */
+        .postdoc-banner {
+            background-color: #f0f9ff;
+            border: 1px solid #bae6fd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+        .postdoc-badge {
+            background-color: #0284c7;
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -23,58 +77,53 @@
     <!-- Header / Hero Section -->
     <header class="text-center mb-4">
         <div class="container">
-            <!-- Profile Photo -->
-            <img src="profileImage.img.jfif" alt="Parker Hunt" class="rounded-circle profile-img mb-2">
+            <img src="profileImage.img.jfif" alt="Parker Hunt" class="rounded-circle profile-img mb-3">
             
-            <h1 class="display-5 fw-bold mb-1">Parker Hunt</h1>
-            <p class="lead mb-2">Ph.D. Candidate | Specialized in Atmospheric Dynamics</p>
+            <h1 class="display-6 fw-bold mb-1">Parker Hunt</h1>
+            <p class="lead mb-2 opacity-90" style="font-size: 1.1rem; color: #cbd5e1;">Ph.D. Candidate &bull; Atmospheric Dynamics & Idealized Modeling</p>
             
-            <!-- Contact & Social Links -->
-            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-2">
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-3">
                 <a href="mailto:huntpb@bc.edu"><i class="fas fa-envelope me-1"></i> huntpb@bc.edu</a>
                 <a href="https://www.linkedin.com/in/parker-hunt-09a329170/" target="_blank"><i class="fab fa-linkedin me-1"></i> LinkedIn</a>
             </div>
 
-            <!-- CV Download Button -->
             <div class="mt-3">
-                <a href="hunt.CV.pdf" target="_blank" class="btn btn-outline-light shadow-sm">
-                    <i class="fas fa-file-pdf me-2"></i> CV (PDF)
+                <a href="hunt.CV.pdf" target="_blank" class="btn btn-outline-light btn-sm px-3 shadow-sm">
+                    <i class="fas fa-file-pdf me-2"></i> Download CV (PDF)
                 </a>
             </div>
         </div>
     </header>
 
     <div class="container">
-        <!-- Single Column Layout -->
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 
                 <!-- About Me Section -->
                 <section class="resume-section" id="about">
-                    <h3 class="section-title"><i class="fas fa-user-circle me-2"></i>About Me</h3>
+                    <h3 class="section-title"><i class="fas fa-user-circle me-2 text-primary"></i>About Me</h3>
                     
-                    <!-- Paragraph 1: PhD Research -->
                     <p>
-                        I am a Ph.D. candidate in Physics at Boston College and a graduate researcher at the Schiller Institute for Integrated Science and Society, advised by Dr. Yi Ming. My research applies fundamental mathematical and physical laws to understand the governing dynamics of time-mean divergent tropical circulations, specifically the Hadley and Walker circulations and their local counterparts. To better understand these circulations, I utilize an idealized moist general circulation model (GCM) to investigate the response to three distinct perturbations: zonally asymmetric (ZA) thermal forcings of varying magnitudes, ZA forcings of varying length scales, and elevated CO2 concentrations. Building on the insights gained from these idealized simulations, I have also collaborated with others to examine the tropical circulation in CMIP6 model ensembles and ERA5 reanalysis data.
+                        I am a Ph.D. candidate in Physics at Boston College and a graduate researcher at the Schiller Institute for Integrated Science and Society, advised by Dr. Yi Ming. My research applies fundamental mathematical and physical laws to understand the governing dynamics of time-mean divergent tropical circulations, specifically the Hadley and Walker circulations and their local counterparts. To better understand these circulations, I utilize an idealized moist general circulation model (GCM) to investigate the response to three distinct perturbations: zonally asymmetric (ZA) thermal forcings of varying magnitudes, ZA forcings of varying length scales, and elevated CO<sub>2</sub> concentrations. Building on the insights gained from these idealized simulations, I have also collaborated with others to examine the tropical circulation in CMIP6 model ensembles and ERA5 reanalysis data.
                     </p>
 
-                    <!-- Paragraph 2: Education & Broad Background -->
-                    <p>
+                    <p class="mb-0">
                         I earned my B.S. in Physics with a minor in Mathematics in 2020 from The Ohio State University (Magna Cum Laude, with Research Distinction in Physics). My background spans several areas of physics and mathematics. At OSU, I conducted research on non-linear dynamical systems and stochastic PDEs with Dr. Ciriyam Jayaprakash, physics education research with Dr. Andrew Heckler and Dr. Gregory Kilcup, and experimental 2D materials with Dr. Jay Gupta. Upon arriving at Boston College, I also explored non-Hermitian second-quantized systems in theoretical condensed matter physics with Dr. Benedetta Flebus, before ultimately settling into atmospheric dynamics in Dr. Yi Ming’s group.
                     </p>
 
-                    <!-- Paragraph 3: Highlighted Callout Box (Postdoc Availability) -->
-                    <div class="p-3 mt-3 bg-light border-start border-4 border-primary rounded-end shadow-sm">
-                        <p class="mb-0">
-                            <strong class="text-primary"><i class="fas fa-compass me-2"></i>Postdoc Opportunities:</strong> I am currently seeking postdoctoral opportunities starting in Summer/Fall 2027, where I aim to apply this rigorous physics background to investigate fundamental problems within the atmospheric system—with a particular interest in extreme events, wave-mean-flow interactions, and other non-linear phenomena.
+                    <!-- Refined Postdoc Card -->
+                    <div class="postdoc-banner">
+                        <span class="postdoc-badge"><i class="fas fa-compass me-1"></i> Postdoc Availability</span>
+                        <p class="mb-0" style="color: #0369a1; font-size: 0.95rem;">
+                            <strong>I am currently seeking postdoctoral opportunities starting in Summer/Fall 2027.</strong> I aim to apply this rigorous physics background to investigate fundamental problems within the atmospheric system—with a particular interest in extreme events, wave-mean-flow interactions, and other non-linear phenomena.
                         </p>
                     </div>
                 </section>
 
                 <!-- Publications -->
                 <section class="resume-section" id="publications">
-                    <h3 class="section-title"><i class="fas fa-book me-2"></i>Publications & Manuscripts</h3>
-                    <ul class="list-unstyled">
+                    <h3 class="section-title"><i class="fas fa-book me-2 text-primary"></i>Publications & Manuscripts</h3>
+                    <ul class="list-unstyled mb-0">
                         <li class="mb-3">
                             1. <strong>Hunt, P.</strong>, Lin, P., Kim, S., MacDonald, C. G., & Ming, Y. (2026). Time-mean tropical circulation in an idealized moist GCM: Dependence on Zonally Asymmetric Forcings. (Submitted to <em>Journal of Climate</em>).
                         </li>
@@ -87,7 +136,7 @@
                         <li class="mb-3">
                             4. Landry, K., Zhou, Y., Ruan, X., Chen, J.-J., Zhai, R., Kong, T., Lueders-Dumont, J., Dong, S., Osorio-Rodriguez, D., Pavia, F. J., Subhas, A. V., Adkins, J. F., Berelson, W. M., Peng, X. N., <strong>Hunt, P.</strong>, Tian, H., Ming, Y., & Wang, X. T. (2026). Thickening of oxygen-deficient waters in the tropical Pacific. (In preparation).
                         </li>
-                        <li class="mb-3">
+                        <li class="mb-0">
                             5. <strong>Hunt, P.</strong>, Lin, P., & Ming, Y. (2026). Time-mean Tropical Circulation in an Idealized Moist GCM: Divergent Circulation’s Dependence on Length Scale. (In preparation).
                         </li>
                     </ul>
@@ -95,9 +144,9 @@
 
                 <!-- Presentations -->
                 <section class="resume-section" id="presentations">
-                    <h3 class="section-title"><i class="fas fa-chalkboard-teacher me-2"></i>Presentations & Seminars</h3>
+                    <h3 class="section-title"><i class="fas fa-chalkboard-teacher me-2 text-primary"></i>Presentations & Seminars</h3>
                     
-                    <h5 class="fw-bold mb-3 text-secondary">Conference Presentations</h5>
+                    <h5 class="fw-bold mb-3 text-secondary" style="font-size: 1rem;">Conference Presentations</h5>
                     <ul class="list-unstyled mb-4">
                         <li class="mb-3">
                             <strong>Hunt, P.</strong>, Kim, S., MacDonald, C. G., & Ming, Y. (2025). "Convective reorganization under different zonally-asymmetric thermal forcings and CO<sub>2</sub> concentrations in an idealized model." <em>AGU Fall Meeting</em>, New Orleans, LA.
@@ -105,17 +154,17 @@
                         <li class="mb-3">
                             <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2025). "Hadley circulation under different zonally-asymmetric thermal forcings and CO<sub>2</sub> concentrations in an idealized model." <em>Gordon Research Conference (GRC)</em>, Lewiston, ME.
                         </li>
-                        <li class="mb-3">
+                        <li class="mb-0">
                             <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2024). "Interconnectivity of tropical circulation patterns." <em>ERDEC Conference</em>, Chestnut Hill, MA.
                         </li>
                     </ul>
 
-                    <h5 class="fw-bold mb-3 text-secondary">Departmental Seminars</h5>
-                    <ul class="list-unstyled">
+                    <h5 class="fw-bold mb-3 text-secondary" style="font-size: 1rem;">Departmental Seminars</h5>
+                    <ul class="list-unstyled mb-0">
                         <li class="mb-3">
                             <strong>Hunt, P.</strong>, Pu, L., Kim, S., MacDonald, C. G., & Ming, Y. (2026). "Convective Reorganization." <em>Department of Earth and Environmental Sciences Seminar</em>, Boston College.
                         </li>
-                        <li class="mb-3">
+                        <li class="mb-0">
                             <strong>Hunt, P.</strong> (2026). "Topological Origins of Equatorial Waves." <em>Department of Physics Seminar</em>, Boston College.
                         </li>
                     </ul>
